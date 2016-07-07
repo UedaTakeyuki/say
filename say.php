@@ -8,12 +8,23 @@ exec($command);
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>say</title>
 </head>
 <body>
-  <form action="" method="POST" >
-    phrase<input type="text" name="phrase" id="phrase"/>
-    <input type="submit" value="say">
-  </form>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <div class="container-fluid">
+    <div class="input-group">
+      <form action="" method="POST" >
+        phrase
+        <input type="text" name="phrase" id="phrase">
+        <span class="input-group-tn">
+          <input type="submit" value="say" class="btn btn-default">
+        </span>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
