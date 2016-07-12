@@ -1,0 +1,26 @@
+{
+  "name": "say",
+  "version": "0.0.0",
+  "description": "Web application to talk by posted string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UedaTakeyuki/say.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi"
+  ],
+  "author": "Takeyuki UEDA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UedaTakeyuki/say/issues"
+  },
+  "devDependencies": {
+    "bootstrap3": "^3.3.5",
+    "jquery": "^1.9.1"
+  }
+}
