@@ -1,6 +1,12 @@
 <?php
+//require_once("vendor/autoload.php");
 //$command = 'sudo sh -c "/home/pi/install/aquestalkpi/AquesTalkPi '. $_POST["phrase"] . ' | aplay"';
-$command = 'sudo sh -c "/home/pi/install/aquestalkpi/AquesTalkPi '. $_POST["phrase"] . ' | aplay > /dev/null &"';
+//$command = 'sudo sh -c "/home/pi/install/aquestalkpi/AquesTalkPi '. $_POST["phrase"] . ' | aplay > /dev/null &"';
+# 設定の読み込み
+$configfile = "config.ini";
+$ini = parse_ini_file($configfile);
+
+$command = 'sudo sh -c "'.$ini["command_path"].' '. $_POST["phrase"] . ' | aplay > /dev/null &"';
 //shell_exec($command);
 exec($command);
 ?>
