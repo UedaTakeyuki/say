@@ -19,7 +19,7 @@ exec($command);
   <title>say</title>
 </head>
 <body>
-  <script src="node_modules/jquery/jquery.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap3/dist/js/bootstrap.min.js"></script>
   <div class="container-fluid">
     <div class="input-group">
